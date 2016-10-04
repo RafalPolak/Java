@@ -9,12 +9,10 @@ import java.util.Objects;
 public class Name {
 
     private String name;
-    private String middleName;
     private String surname;
 
-    public Name(String name, String middleName, String surname) {
+    public Name(String name, String surname) {
         this.name = name;
-        this.middleName = middleName;
         this.surname = surname;
     }
 
@@ -24,14 +22,6 @@ public class Name {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getMiddleName() {
-        return middleName;
-    }
-
-    public void setMiddleName(String middleName) {
-        this.middleName = middleName;
     }
 
     public String getSurname() {
@@ -46,7 +36,6 @@ public class Name {
     public int hashCode() {
         int hash = 7;
         hash = 67 * hash + Objects.hashCode(this.name);
-        hash = 67 * hash + Objects.hashCode(this.middleName);
         hash = 67 * hash + Objects.hashCode(this.surname);
         return hash;
     }
@@ -66,9 +55,6 @@ public class Name {
         if (!Objects.equals(this.name, other.name)) {
             return false;
         }
-        if (!Objects.equals(this.middleName, other.middleName)) {
-            return false;
-        }
         if (!Objects.equals(this.surname, other.surname)) {
             return false;
         }
@@ -77,7 +63,7 @@ public class Name {
 
     @Override
     public String toString() {
-        return "Name --> " + name + "\nMiddle name --> " + middleName + "\nSurname --> " + surname;
+        return "Name --> " + name + "\nSurname --> " + surname;
     }
     
     
