@@ -12,26 +12,31 @@ import pl.rpolak.generator.util.LoadData;
 public class GeneratorBO implements IGeneratorBO{
 
     @Override
-    public Credentials generateCredential() {
+    public Credentials generateCredential(int lenght) {
         return new Credentials("TEST");
     }
 
     @Override
-    public Name generateName() {
+    public Name generateName(int gender) {
+        
+        Name data = null;
+        
         LoadData load = new LoadData();
         
-        load.loadAndChooseName();
+        data = load.loadAndDrawNameSurname(gender);
         
-        return new Name("TEST", "TEST");
+        //todo exception if data is null
+        
+        return data;
     }
 
     @Override
-    public HashMap<Integer, Credentials> generateCredentials(int quantity) {
+    public HashMap<Integer, Credentials> generateCredentials(int quantity, int lenght) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public HashMap<Integer, Name> generateNames(int quantity) {
+    public HashMap<Integer, Name> generateNames(int quantity, int gender) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
