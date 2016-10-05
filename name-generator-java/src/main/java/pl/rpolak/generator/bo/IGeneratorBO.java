@@ -10,8 +10,8 @@ import pl.rpolak.generator.name.Name;
  */
 public interface IGeneratorBO {
     
-    Credentials generateCredential();
-    Name generateName();
-    HashMap<Integer, Credentials> generateCredentials(int quantity);
-    HashMap<Integer, Name> generateNames(int quantity);
+    Credentials generateCredential(int lenght);
+    Name generateName(int gender);
+    HashMap<Integer, Credentials> generateCredentials(int quantity, int lenght);
+    HashMap<Integer, Name> generateNames(int quantity, int gender);
 }
