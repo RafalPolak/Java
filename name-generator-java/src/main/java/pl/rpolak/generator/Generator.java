@@ -59,7 +59,7 @@ public class Generator {
         
         if(primarySelect==2){
             System.out.println("You choose to generate password\n"
-                    + "How long should password be ?\n");
+                    + "How long should password be ?");
             
             //toDo security for incorrect lenght or provided letter
             //toDo create password with special character

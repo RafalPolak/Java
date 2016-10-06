@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
+import pl.rpolak.generator.credentials.Credentials;
 import pl.rpolak.generator.name.Name;
 
 /**
@@ -16,6 +17,8 @@ import pl.rpolak.generator.name.Name;
  */
 public class LoadData {
 
+    Random random;
+    
     public Name loadAndDrawNameSurname(int gender) {
 
         //Array for names and surnames
@@ -23,7 +26,7 @@ public class LoadData {
         ArrayList<String> surnames = new ArrayList<String>();
 
         Name name = new Name("test", "test");
-        Random random = new Random();
+        random = new Random();
 
         String maleFile = "name-male.txt";
         String femaleFile = "name-female.txt";
@@ -98,6 +101,33 @@ public class LoadData {
 
         return name;
 
+    }
+    
+    public Credentials drawPassword(int lenght){
+        
+        //alghoritm take small letter || upper letter || digit
+        
+        ArrayList<Character> smallLetter = new ArrayList<>();
+        ArrayList<Character> upperLetter = new ArrayList<>();
+        
+        random = new Random();
+        
+        //fill lists with letters
+        
+        for(int sign=65;sign<=90;sign++){
+            smallLetter.add((char)sign);
+        }
+        
+        for(int sign=97;sign<=122;sign++){
+            upperLetter.add((char)sign);
+        }
+        
+        System.out.println("TEST: "+smallLetter.toString());
+        System.out.println("TEST2: "+upperLetter.toString());
+        System.out.println("Test3: "+random.nextInt(10));
+//        random.nextInt(10);
+        
+        return new Credentials("TEST");
     }
 
 }
