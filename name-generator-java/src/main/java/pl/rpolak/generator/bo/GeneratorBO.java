@@ -13,7 +13,14 @@ public class GeneratorBO implements IGeneratorBO{
 
     @Override
     public Credentials generateCredential(int lenght) {
-        return new Credentials("TEST");
+        Credentials credentials = null;
+        
+        LoadData load = new LoadData();
+        
+        credentials = load.drawPassword(lenght);
+        
+        //todo exception if credentials is null
+        return credentials;
     }
 
     @Override
