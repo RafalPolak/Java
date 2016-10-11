@@ -1,5 +1,6 @@
 package pl.rpolak.generator;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import pl.rpolak.generator.bo.GeneratorBO;
 
@@ -36,9 +37,13 @@ public class Generator {
                     + "3 --> generate name with surname and password\n"
                     + "0 --> quit");
 
-            menuSelect = scanner.nextInt();
+            try{
+                menuSelect = scanner.nextInt();
+            } catch (InputMismatchException inputMismatchException){
+                throw new InputMismatchException("Wrong parameter!!! "+inputMismatchException);
+            }
 
-            System.out.println("Your selection: " + menuSelect);
+            System.out.println("Your selection: " + menuSelect+"\n");
 
             //Create console questions for choose gender/password length or both
             if (menuSelect == 1) {
@@ -48,8 +53,17 @@ public class Generator {
                         + "2 --> female\n");
 
                 //toDo security for value != (1 and 2)
-                genderSelect = scanner.nextInt();
-
+                
+                try{
+                    genderSelect = scanner.nextInt();
+                } catch (InputMismatchException inputMismatchException) {
+                    throw new InputMismatchException("Wrong parameter!!! "+inputMismatchException);
+                }
+                
+                if(genderSelect != 1 || genderSelect != 2){
+                    throw new InputMismatchException("Wrong parameter !!!\nThere should be 1 or 2 ");
+                }
+                
                 //Use generator
                 nameData = generator.generateName(genderSelect).toString();
             }
@@ -58,9 +72,12 @@ public class Generator {
                 System.out.println("You choose to generate password\n"
                         + "How long should password be ?");
 
-                //toDo security for incorrect lenght or provided letter
-                passwordLenght = scanner.nextInt();
-
+                try{
+                    passwordLenght = scanner.nextInt();
+                } catch (InputMismatchException inputMismatchException){
+                    throw new InputMismatchException("Wrong parameter!!! "+inputMismatchException);
+                }
+                
                 //Use generator
                 password = generator.generateCredential(passwordLenght).toString();
 
