@@ -49,9 +49,7 @@ public class Credentials {
 
     @Override
     public String toString() {
-        return "Your password --> " + password;
+        return "Password --> " + password;
     }
-    
-    
-    
+
 }
