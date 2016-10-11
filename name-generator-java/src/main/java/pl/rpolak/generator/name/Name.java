@@ -65,7 +65,5 @@ public class Name {
     public String toString() {
         return "Name --> " + name + "\nSurname --> " + surname;
     }
-    
-    
-    
+
 }
