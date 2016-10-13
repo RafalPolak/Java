@@ -14,13 +14,13 @@ import pl.rpolak.generator.name.Name;
  */
 public class LoadData {
 
-    Random random;
+    private Random random;
 
     public Name loadAndDrawNameSurname(int gender) {
 
         //Array for names and surnames
-        ArrayList<String> names = new ArrayList<String>();
-        ArrayList<String> surnames = new ArrayList<String>();
+        ArrayList<String> names = new ArrayList<>();
+        ArrayList<String> surnames = new ArrayList<>();
 
         Name name = new Name("test", "test");
         random = new Random();
@@ -29,6 +29,7 @@ public class LoadData {
         String femaleFile = "name-female.txt";
         String surname = null;
         String filename = null;
+        int nameSize = 0;
 
         ClassLoader classLoader = getClass().getClassLoader();
 
@@ -57,7 +58,8 @@ public class LoadData {
         }
 
         //Draw name and set in object
-        name.setName(names.get(random.nextInt(names.size())));
+        nameSize = random.nextInt(names.size());
+        name.setName(names.get(nameSize));
 
         //Load surnames from resources
         file = new File(classLoader.getResource("surname.txt").getFile());
