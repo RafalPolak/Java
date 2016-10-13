@@ -1,11 +1,18 @@
     <project>
-      <modelVersion>4.0.0</modelVersion>
-      <groupId>pl.rpolak</groupId>
-      <artifactId>JavaCodes</artifactId>
-      <version>0.1</version>
-      <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>pl.rpolak</groupId>
+    <artifactId>JavaCodes</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
  
-  	  <modules>
-    	<module>name-generator-java</module>
-  	  </modules>
-    </project>
+    <modules>
+        <module>HigherLower</module>
+        <module>NameGenerator</module>
+    </modules>
+    
+    <!-- my properties -->
+    <properties>
+        <jacoco.version>0.7.6.201602180812</jacoco.version>
+    </properties>
+    
+</project>

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>pl.rpolak</groupId>
-    <artifactId>name-generator-java</artifactId>
-    <version>0.1</version>
+    <parent>
+        <groupId>pl.rpolak</groupId>
+        <artifactId>JavaCodes</artifactId>
+        <version>0.0.1</version>
+    </parent>
+    <artifactId>NameGenerator</artifactId>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -29,7 +32,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.6.201602180812</version>
+                <version>${jacoco.version}</version>
                 <executions>
                     <execution>
                         <id>default-prepare-agent</id>
