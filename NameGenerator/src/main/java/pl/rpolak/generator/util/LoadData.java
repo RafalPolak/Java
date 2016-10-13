@@ -14,13 +14,13 @@ import pl.rpolak.generator.name.Name;
  */
 public class LoadData {
 
-    private Random random;
+    Random random;
 
     public Name loadAndDrawNameSurname(int gender) {
 
         //Array for names and surnames
-        ArrayList<String> names = new ArrayList<>();
-        ArrayList<String> surnames = new ArrayList<>();
+        ArrayList<String> names = new ArrayList<String>();
+        ArrayList<String> surnames = new ArrayList<String>();
 
         Name name = new Name("test", "test");
         random = new Random();
@@ -29,7 +29,6 @@ public class LoadData {
         String femaleFile = "name-female.txt";
         String surname = null;
         String filename = null;
-        int nameSize = 0;
 
         ClassLoader classLoader = getClass().getClassLoader();
 
@@ -58,8 +57,7 @@ public class LoadData {
         }
 
         //Draw name and set in object
-        nameSize = random.nextInt(names.size());
-        name.setName(names.get(nameSize));
+        name.setName(names.get(random.nextInt(names.size()+1)));
 
         //Load surnames from resources
         file = new File(classLoader.getResource("surname.txt").getFile());
@@ -78,7 +76,7 @@ public class LoadData {
         }
 
         //Draw surname and replace end of word for proper male or female
-        surname = surnames.get(random.nextInt(surnames.size()));
+        surname = surnames.get(random.nextInt(surnames.size()+1));
 
         if (gender == 2) {
 
@@ -138,11 +136,11 @@ public class LoadData {
             int whichArray = random.nextInt(4);
 
             if (whichArray == 0) {
-                stringBuilder.append(smallLetter.get(random.nextInt(smallLetter.size())));
+                stringBuilder.append(smallLetter.get(random.nextInt(smallLetter.size()+1)));
             }
 
             if (whichArray == 1) {
-                stringBuilder.append(upperLetter.get(random.nextInt(upperLetter.size())));
+                stringBuilder.append(upperLetter.get(random.nextInt(upperLetter.size()+1)));
             }
 
             if (whichArray == 2) {
