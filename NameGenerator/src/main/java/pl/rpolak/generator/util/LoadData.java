@@ -57,7 +57,7 @@ public class LoadData {
         }
 
         //Draw name and set in object
-        name.setName(names.get(random.nextInt(names.size()+1)));
+        name.setName(names.get(random.nextInt(names.size())));
 
         //Load surnames from resources
         file = new File(classLoader.getResource("surname.txt").getFile());
@@ -76,7 +76,7 @@ public class LoadData {
         }
 
         //Draw surname and replace end of word for proper male or female
-        surname = surnames.get(random.nextInt(surnames.size()+1));
+        surname = surnames.get(random.nextInt(surnames.size()));
 
         if (gender == 2) {
 
@@ -136,11 +136,11 @@ public class LoadData {
             int whichArray = random.nextInt(4);
 
             if (whichArray == 0) {
-                stringBuilder.append(smallLetter.get(random.nextInt(smallLetter.size()+1)));
+                stringBuilder.append(smallLetter.get(random.nextInt(smallLetter.size())));
             }
 
             if (whichArray == 1) {
-                stringBuilder.append(upperLetter.get(random.nextInt(upperLetter.size()+1)));
+                stringBuilder.append(upperLetter.get(random.nextInt(upperLetter.size())));
             }
 
             if (whichArray == 2) {
