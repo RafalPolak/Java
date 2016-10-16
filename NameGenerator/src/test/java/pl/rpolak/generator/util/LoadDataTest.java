@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pl.rpolak.generator.util;
 
 import org.junit.After;
@@ -55,32 +50,32 @@ public class LoadDataTest {
         assertEquals(testPassword, credentials.getPassword().length() - 1);
     }
 
-    @Test
-    public void shouldGenerateNameSurnameMale() {
-        //given
-        Name name = null;
-        LoadData loadData = new LoadData();
-        int male = 1;
-
-        //when
-        name = loadData.loadAndDrawNameSurname(male);
-
-        //then
-        assertNotNull(name);
-    }
-    
-    @Test
-    public void shouldGenerateNameSurnameFemale(){
-        //given
-        Name name = null;
-        LoadData loadData = new LoadData();
-        int female = 2;
-        
-        //when
-        name = loadData.loadAndDrawNameSurname(female);
-        
-        //then
-        assertNotNull(name);
-    }
+//    @Test
+//    public void shouldGenerateNameSurnameMale() {
+//        //given
+//        Name name = null;
+//        LoadData loadData = new LoadData();
+//        int male = 1;
+//
+//        //when
+//        name = loadData.loadAndDrawNameSurname(male);
+//
+//        //then
+//        assertNotNull(name);
+//    }
+//    
+//    @Test
+//    public void shouldGenerateNameSurnameFemale(){
+//        //given
+//        Name name = null;
+//        LoadData loadData = new LoadData();
+//        int female = 2;
+//        
+//        //when
+//        name = loadData.loadAndDrawNameSurname(female);
+//        
+//        //then
+//        assertNotNull(name);
+//    }
 
 }
