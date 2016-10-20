@@ -8,6 +8,7 @@
     <modules>
         <module>HigherLower</module>
         <module>NameGenerator</module>
+        <module>HeadsTails</module>
     </modules>
     
     <!-- my properties -->
