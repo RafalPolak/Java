@@ -50,32 +50,32 @@ public class LoadDataTest {
         assertEquals(testPassword, credentials.getPassword().length() - 1);
     }
 
-//    @Test
-//    public void shouldGenerateNameSurnameMale() {
-//        //given
-//        Name name = null;
-//        LoadData loadData = new LoadData();
-//        int male = 1;
-//
-//        //when
-//        name = loadData.loadAndDrawNameSurname(male);
-//
-//        //then
-//        assertNotNull(name);
-//    }
-//    
-//    @Test
-//    public void shouldGenerateNameSurnameFemale(){
-//        //given
-//        Name name = null;
-//        LoadData loadData = new LoadData();
-//        int female = 2;
-//        
-//        //when
-//        name = loadData.loadAndDrawNameSurname(female);
-//        
-//        //then
-//        assertNotNull(name);
-//    }
+    @Test
+    public void shouldGenerateNameSurnameMale() {
+        //given
+        Name name = null;
+        LoadData loadData = new LoadData();
+        int male = 1;
+
+        //when
+        name = loadData.loadAndDrawNameSurname(male);
+
+        //then
+        assertNotNull(name);
+    }
+    
+    @Test
+    public void shouldGenerateNameSurnameFemale(){
+        //given
+        Name name = null;
+        LoadData loadData = new LoadData();
+        int female = 2;
+        
+        //when
+        name = loadData.loadAndDrawNameSurname(female);
+        
+        //then
+        assertNotNull(name);
+    }
 
 }

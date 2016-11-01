@@ -1,7 +1,7 @@
 package pl.rpolak.generator.util;
 
-import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -25,12 +25,10 @@ public class LoadData {
         Name name = new Name("test", "test");
         random = new Random();
 
-        String maleFile = "name-male.txt";
-        String femaleFile = "name-female.txt";
-        String surname = null;
+        String maleFile = "http://rafalpolak.github.io/resources/generatorFiles/name-male.txt";
+        String femaleFile = "http://rafalpolak.github.io/resources/generatorFiles/name-female.txt";
+        String surname = "http://rafalpolak.github.io/resources/generatorFiles/surname.txt";
         String filename = null;
-
-        ClassLoader classLoader = getClass().getClassLoader();
 
         if (gender == 1) {
             filename = maleFile;
@@ -40,10 +38,10 @@ public class LoadData {
             filename = femaleFile;
         }
 
-        //Load names from resources
-        File file = new File(classLoader.getResource(filename).getFile());
-
-        try (Scanner scanner = new Scanner(file)) {
+        //Load names from external source
+        try {
+            URL url = new URL(filename);
+            Scanner scanner = new Scanner(url.openStream());
 
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
@@ -59,10 +57,10 @@ public class LoadData {
         //Draw name and set in object
         name.setName(names.get(random.nextInt(names.size())));
 
-        //Load surnames from resources
-        file = new File(classLoader.getResource("surname.txt").getFile());
-
-        try (Scanner scanner = new Scanner(file)) {
+        //Load surnames from external source
+        try {
+            URL url = new URL(surname);
+            Scanner scanner = new Scanner(url.openStream());
 
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
