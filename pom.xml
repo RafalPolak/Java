@@ -9,6 +9,7 @@
         <module>HigherLower</module>
         <module>NameGenerator</module>
         <module>HeadsTails</module>
+        <module>TemperatureConverter</module>
     </modules>
     
     <!-- my properties -->
