@@ -150,8 +150,6 @@ public class LoadData {
             }
         }
 
-        System.out.println("Drawing password: " + stringBuilder.toString());
-
         credentials.setPassword(stringBuilder.toString());
 
         return credentials;
