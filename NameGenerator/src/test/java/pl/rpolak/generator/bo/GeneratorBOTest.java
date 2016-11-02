@@ -40,34 +40,34 @@ public class GeneratorBOTest {
     public void tearDown() {
     }
 
-//    @Test
-//    public void shouldReturnGeneratedNameMale() {
-//        //given
-//        GeneratorBO generatorBO = new GeneratorBO();
-//        int male = 1;
-//        Name name = null;
-//
-//        //when
-//        name = generatorBO.generateName(male);
-//
-//        //then
-//        //todo add method to check if proper part word end 
-//        assertNotNull(name);
-//    }
-//
-//    @Test
-//    public void shouldReturnGeneratedNameFemale() {
-//        //given
-//        GeneratorBO generatorBO = new GeneratorBO();
-//        int female = 2;
-//        Name name = null;
-//
-//        //when
-//        name = generatorBO.generateName(female);
-//
-//        //then
-//        assertNotNull(name);
-//    }
+    @Test
+    public void shouldReturnGeneratedNameMale() {
+        //given
+        GeneratorBO generatorBO = new GeneratorBO();
+        int male = 1;
+        Name name = null;
+
+        //when
+        name = generatorBO.generateName(male);
+
+        //then
+        //todo add method to check if proper part word end 
+        assertNotNull(name);
+    }
+
+    @Test
+    public void shouldReturnGeneratedNameFemale() {
+        //given
+        GeneratorBO generatorBO = new GeneratorBO();
+        int female = 2;
+        Name name = null;
+
+        //when
+        name = generatorBO.generateName(female);
+
+        //then
+        assertNotNull(name);
+    }
 
     @Test
     public void shouldReturnProperGeneratedPassword() {
