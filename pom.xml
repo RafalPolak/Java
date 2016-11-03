@@ -10,6 +10,7 @@
         <module>NameGenerator</module>
         <module>HeadsTails</module>
         <module>TemperatureConverter</module>
+        <module>CalculateAge</module>
     </modules>
     
     <!-- my properties -->
