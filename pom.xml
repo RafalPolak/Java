@@ -11,6 +11,7 @@
         <module>HeadsTails</module>
         <module>TemperatureConverter</module>
         <module>CalculateAge</module>
+        <module>ChallengesFrontend</module>
     </modules>
     
     <!-- my properties -->
