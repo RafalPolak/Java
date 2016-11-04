@@ -6,5 +6,5 @@ package pl.rpolak.calculateage.bo;
  */
 public interface ICalculateAgeBO {
 
-    public double ageInSeconds(int day, int month, int year);
+    public long ageInSeconds(String birth);
 }

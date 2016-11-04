@@ -1,5 +1,11 @@
 package pl.rpolak.calculateage.bo;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import pl.rpolak.calculateage.exception.IncorrectValueException;
+
 /**
  *
  * @author Rafal.Polak
@@ -7,11 +13,24 @@ package pl.rpolak.calculateage.bo;
 public class CalculateAgeBO implements ICalculateAgeBO {
 
     @Override
-    public double ageInSeconds(int day, int month, int year) {
+    public long ageInSeconds(String birth) {
 
-        double test = 0.0;
+        long systemTime = System.currentTimeMillis();
+        long age = 0;
 
-        return test;
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+
+        try {
+
+            Date date = dateFormat.parse(birth);
+
+            age = systemTime - date.getTime();
+
+        } catch (ParseException parseException) {
+            throw new IncorrectValueException("Incorrect format!!!");
+        }
+
+        return age;
     }
 
 }
