@@ -1,0 +1,1 @@
+* Extend EncryptionDecryptionAlghoritm for more options not only BASE64

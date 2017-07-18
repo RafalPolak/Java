@@ -1,7 +1,6 @@
 package pl.rpolak.encryptiondecryptionalgorithm;
 
 import pl.rpolak.encryptiondecryptionalgorithm.bo.AlgorithmBO;
-import pl.rpolak.encryptiondecryptionalgorithm.exception.IncorrectTextException;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -32,8 +31,8 @@ public class EncDecAlgorithm {
 
             System.out.println("Welcome encode/decode program\n" +
                     "Options:\n" +
-                    "1 --> encode your data\n" +
-                    "2 --> decode your data\n" +
+                    "1 --> encode your data BASE64\n" +
+                    "2 --> decode your data BASE64\n" +
                     "0 --> exit");
 
             try{
@@ -50,8 +49,8 @@ public class EncDecAlgorithm {
 
                 try{
                     text = scanner.next();
-                } catch (IncorrectTextException incorrectTextException){
-                    throw new IncorrectTextException("Wrong text: " + incorrectTextException);
+                } catch (InputMismatchException inputMismatchException){
+                    throw new InputMismatchException("Wrong text: " + inputMismatchException);
                 }
 
                 encoded = algorithmBO.encode(text);
@@ -64,8 +63,8 @@ public class EncDecAlgorithm {
 
                 try{
                     text = scanner.next();
-                }catch (IncorrectTextException incorrectTextException){
-                    throw new IncorrectTextException("Wrong text: " + incorrectTextException);
+                }catch (InputMismatchException inputMismatchException){
+                    throw new InputMismatchException("Wrong text: " + inputMismatchException);
                 }
 
                 decoded = algorithmBO.decode(text);
