@@ -12,6 +12,7 @@
         <module>TemperatureConverter</module>
         <module>CalculateAge</module>
         <module>EncryptionDecryptionAlgorithm</module>
+        <module>FizzBuzz</module>
     </modules>
     
     <!-- my properties -->
