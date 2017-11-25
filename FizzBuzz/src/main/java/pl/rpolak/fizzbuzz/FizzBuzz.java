@@ -1,3 +1,5 @@
+package pl.rpolak.fizzbuzz;
+
 import pl.rpolak.fizzbuzz.bo.FizzBuzzBO;
 
 import java.util.InputMismatchException;
@@ -11,8 +13,8 @@ public class FizzBuzz {
     public static void main(String args[]){
 
 
-        String output = "";
-        long number = 0;
+        String output;
+        long number;
         boolean isEnd = true;
 
         Scanner scanner = new Scanner(System.in);
