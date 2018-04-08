@@ -2,12 +2,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>pl.rpolak</groupId>
     <artifactId>JavaCodes</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <packaging>pom</packaging>
  
     <modules>
-        <module>HigherLower</module>
         <module>NameGenerator</module>
+        <module>HigherLower</module>
         <module>HeadsTails</module>
         <module>TemperatureConverter</module>
         <module>CalculateAge</module>
