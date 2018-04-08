@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>pl.rpolak</groupId>
     <artifactId>JavaCodes</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <packaging>pom</packaging>
  
     <modules>
@@ -12,6 +12,7 @@
         <module>TemperatureConverter</module>
         <module>CalculateAge</module>
         <module>EncryptionDecryptionAlgorithm</module>
+        <module>FizzBuzz</module>
     </modules>
     
     <!-- my properties -->
