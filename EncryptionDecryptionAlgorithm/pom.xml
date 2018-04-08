@@ -6,8 +6,8 @@
         <artifactId>JavaCodes</artifactId>
         <version>1.0.5</version>
     </parent>
-    <artifactId>HigherLower</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>EncryptionDecryptionAlgorithm</artifactId>
+ <packaging>jar</packaging>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
