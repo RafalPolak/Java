@@ -2,19 +2,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>pl.rpolak</groupId>
     <artifactId>JavaCodes</artifactId>
-    <version>1.0.6</version>
+    <version>0.0.1</version>
     <packaging>pom</packaging>
  
     <modules>
-        <module>NameGenerator</module>
         <module>HigherLower</module>
+        <module>NameGenerator</module>
         <module>HeadsTails</module>
         <module>TemperatureConverter</module>
-        <module>CalculateAge</module>
-        <module>EncryptionDecryptionAlgorithm</module>
-        <module>FizzBuzz</module>
-        <module>RockPaperScissors</module>
-        <module>Playground</module>
     </modules>
     
     <!-- my properties -->
