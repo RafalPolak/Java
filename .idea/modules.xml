@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CalculateAge/CalculateAge.iml" filepath="$PROJECT_DIR$/CalculateAge/CalculateAge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EncryptionDecryptionAlgorithm/EncryptionDecryptionAlgorithm.iml" filepath="$PROJECT_DIR$/EncryptionDecryptionAlgorithm/EncryptionDecryptionAlgorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FizzBuzz/FizzBuzz.iml" filepath="$PROJECT_DIR$/FizzBuzz/FizzBuzz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HeadsTails/HeadsTails.iml" filepath="$PROJECT_DIR$/HeadsTails/HeadsTails.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HigherLower/HigherLower.iml" filepath="$PROJECT_DIR$/HigherLower/HigherLower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaCodes.iml" filepath="$PROJECT_DIR$/JavaCodes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NameGenerator/NameGenerator.iml" filepath="$PROJECT_DIR$/NameGenerator/NameGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Playground/Playground.iml" filepath="$PROJECT_DIR$/Playground/Playground.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RockPaperScissors/RockPaperScissors.iml" filepath="$PROJECT_DIR$/RockPaperScissors/RockPaperScissors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TemperatureConverter/TemperatureConverter.iml" filepath="$PROJECT_DIR$/TemperatureConverter/TemperatureConverter.iml" />
+    </modules>
+  </component>
+</project>

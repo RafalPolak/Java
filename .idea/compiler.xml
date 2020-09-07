@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="FizzBuzz" />
+        <module name="CalculateAge" />
+        <module name="HeadsTails" />
+        <module name="RockPaperScissors" />
+        <module name="EncryptionDecryptionAlgorithm" />
+        <module name="HigherLower" />
+        <module name="NameGenerator" />
+        <module name="TemperatureConverter" />
+        <module name="Playground" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CalculateAge" target="1.8" />
+      <module name="ChallengesFrontend" target="1.8" />
+      <module name="ComparingTest" target="1.8" />
+      <module name="EncryptionDecryptionAlgorithm" target="1.8" />
+      <module name="FizzBuzz" target="1.8" />
+      <module name="FizzBuzz (1)" target="1.8" />
+      <module name="HeadsTails" target="1.8" />
+      <module name="HigherLower" target="1.8" />
+      <module name="JavaCodes" target="1.5" />
+      <module name="NameGenerator" target="1.8" />
+      <module name="Playground" target="1.5" />
+      <module name="RockPaperScissors" target="1.8" />
+      <module name="TemperatureConverter" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
